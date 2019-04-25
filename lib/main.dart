@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_hub/color/color.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter_movie_hub/screens/home_screen.dart';
 
 final List<String> imgList = [
       'https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=<<api_key>>&language=en-US'
@@ -19,43 +20,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primaryBlack,
         fontFamily: 'Raleway',
+        // TODO: Experiment with CupertinoTransition for Android
+        // https://stackoverflow.com/questions/50196913/how-to-change-navigation-animation-using-flutter
+        // Add the line below to get horizontal sliding transitions for routes.
+        pageTransitionsTheme: PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+        },
       ),
-      home: MyHomePage(title: 'Movie Hub'),
+
+      ),
+
+
+      home: HomeScreen(),
 
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
 
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-
-
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        textTheme: TextTheme(
-        title: TextStyle(
-        color: Colors.white,
-        fontSize: 20.0,
-    )
-      ),
-
-      )
-
-
-    );
-  }
-}
