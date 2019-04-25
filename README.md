@@ -1,4 +1,4 @@
-## Flutter Movie Fox
+## Flutter Movie Mouse
 
 A simple Flutter application that retrieves movies from the TheMovieDB API using BLoC Pattern
 
