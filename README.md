@@ -14,7 +14,8 @@ A simple Flutter application that retrieves movies from the TheMovieDB API using
 - [ ] Solid BLoC Architecture Implementation
 
 
-## Getting Started
+### OVERVIEW
+- Flutter framework
 
 This project is a starting point for a Flutter application.
 
