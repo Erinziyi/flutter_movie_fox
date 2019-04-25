@@ -1,6 +1,18 @@
-# flutter_movie_hub
+## Flutter Movie Fox
 
-A new Flutter project.
+A simple Flutter application that retrieves movies from the TheMovieDB API using BLoC Pattern
+
+#### TODO 
+- [ ] Movie List View Page
+- [ ] Movie Detail View Page
+- [ ] Video
+- [ ] Screenshots
+- [ ] Favorites
+- [ ] Navigation Drawer
+- [ ] Watch Later
+- [ ] Info Modal
+- [ ] Solid BLoC Architecture Implementation
+
 
 ## Getting Started
 
